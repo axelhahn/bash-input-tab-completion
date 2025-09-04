@@ -1,6 +1,6 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-# source file for tab completion functionality
+# source file for input functions
 . "$( dirname "$0" )/../src/input.class.sh" || exit 1
 
 echo "
