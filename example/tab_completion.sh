@@ -3,6 +3,18 @@
 # source file for tab completion functionality
 . "$( dirname "$0" )/../src/input.class.sh" || exit 1
 
+echo "
+----------------------------------------------------------------------
+
+Tab completion example
+
+----------------------------------------------------------------------
+
+Press tab to show suggestions.
+Exit by just pressing enter.
+"
+
+
 words=(
     anton
     berta
@@ -14,7 +26,7 @@ words=(
 input.setCompletion "${words[@]}"
 
 while :; do
-    read -rep"> " inp
+    read -rep"names > " inp
     test -z "$inp" && break
     # process command
     echo "You entered '$inp'"
